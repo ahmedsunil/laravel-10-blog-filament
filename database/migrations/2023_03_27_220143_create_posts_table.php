@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('thumbnail', 2048)->nullable();
             $table->longText('body');
             $table->boolean('active');
-            $table->datetimes('published_at');
+            $table->datetime('published_at');
             $table->foreignIdFor(User::class, 'user_id');
             $table->timestamps();
         });
